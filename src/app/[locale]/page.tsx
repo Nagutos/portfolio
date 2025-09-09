@@ -1,6 +1,7 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
+import { getMyActualAge } from '@/utils/helpers';
 import Hero from '@/components/Hero';
 import Section from '@/components/Section';
 import Timeline from '@/components/Timeline';
@@ -89,32 +90,63 @@ export default function HomePage() {
         </Section>
 
         <section
-          id="skills"
-          className="max-w-5xl mx-auto px-6 py-20 bg-[#f3f3f3] flex flex-col justify-center"
+          id="skills-interests"
+          className="max-w-6xl mx-auto px-6 py-20 bg-[#f3f3f3] grid grid-cols-1 md:grid-cols-2 gap-12 items-start"
         >
-          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-center text-[#E63946] mb-14 border-b-2 border-red-500 pb-2">
-            {t('skills.title')}
-          </h2>
-          <div className="text-black max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-8">
-            {[
-              'development',
-              'systems',
-              'security',
-              'virtualization',
-              'maintenance',
-            ].map((key) => (
-              <div
-                key={key}
-                className="bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition"
-              >
-                <h3 className="text-xl sm:text-2xl font-semibold text-[#E63946] capitalize">
-                  {key}
-                </h3>
-                <p className="text-gray-700 text-lg sm:text-xl mt-3">
-                  {t(`skills.${key}`)}
-                </p>
-              </div>
-            ))}
+          {/* Bloc Compétences */}
+          <div className="flex flex-col gap-10">
+            <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-center md:text-left text-[#E63946] border-b-2 border-red-500 pb-2">
+              {t('skills.title')}
+            </h2>
+            <div className="text-black grid grid-cols-1 gap-8">
+              {[
+                'development',
+                'systems',
+                'security',
+                'virtualization',
+                'maintenance',
+              ].map((skillKey) => (
+                <div
+                  key={skillKey}
+                  className="bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition"
+                >
+                  <h3 className="text-xl sm:text-2xl font-semibold text-[#E63946] capitalize">
+                    {t(`skills.${skillKey}.title`)}
+                  </h3>
+                  <p className="text-gray-700 text-lg sm:text-xl mt-3">
+                    {t(`skills.${skillKey}.description`)}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Bloc Centres d’intérêt */}
+          <div className="flex flex-col gap-10">
+            <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-center md:text-left text-[#E63946] border-b-2 border-red-500 pb-2">
+              Centres d’intérêt
+            </h2>
+            <div className="text-black grid grid-cols-1 gap-8">
+              {[
+                'informatique',
+                'sous_titrage',
+                'jeux_video',
+                'jap_animation',
+                'musique',
+              ].map((interestKey) => (
+                <div
+                  key={interestKey}
+                  className="bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition"
+                >
+                  <h3 className="text-xl sm:text-2xl font-semibold text-[#E63946] capitalize">
+                    {t(`interest.${interestKey}.title`)}
+                  </h3>
+                  <p className="text-gray-700 text-lg sm:text-xl mt-3">
+                    {t(`interest.${interestKey}.description`)}
+                  </p>
+                </div>
+              ))}
+            </div>
           </div>
         </section>
 
@@ -139,7 +171,7 @@ export default function HomePage() {
           id="contact"
           className="w-full px-6 py-10 bg-[#E63946] flex flex-col items-center justify-center text-[#FAFAFA]"
         >
-          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-center mb-14">
+          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-center mb-5">
             Contactez-moi
           </h2>
           <div className="flex flex-col items-center gap-2 max-w-4xl text-center">
@@ -147,7 +179,7 @@ export default function HomePage() {
             <p className="text-xl md:text-2xl">{t('contact.phone')}</p>
             <p className="text-xl md:text-2xl">{t('contact.email')}</p>
             <p className="text-xl md:text-2xl">
-              {t('contact.location')} - {t('contact.age')} -{' '}
+              {t('contact.location')} - {getMyActualAge() + t('contact.age')} -{' '}
               {t('contact.drivingLicense')}
             </p>
             <a
