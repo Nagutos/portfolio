@@ -1,6 +1,99 @@
 {
-  "home": {
-    "title": "Bienvenue sur mon portfolio",
-    "description": "Ceci est la version française."
+  "navbar": {
+    "home": "Accueil",
+    "parcours": "Parcours",
+    "skills": "Compétences",
+    "extra": "Extras",
+    "contact": "contact"
+  },
+  "profile": {
+    "name": "Maxime Ryckebusch",
+    "title": "Administrateur systèmes et réseaux",
+    "subtitle": "Technicien informatique sociable et dynamique, spécialisé en systèmes et réseaux avec une solide formation en cybersécurité.",
+    "description": "Consciencieux et persévérant, je possède une expérience pratique dans le support client, la configuration de serveurs et le déploiement d’outils IT. Motivé par la résolution de problèmes et l’optimisation des infrastructures, je m’adapte rapidement aux environnements techniques et aux besoins des utilisateurs."
+  },
+  "contact": {
+    "address": "Armbouts-Cappel (59380), France",
+    "phone": "07 77 92 01 06",
+    "email": "maxime.ryckebusch1@gmail.com",
+    "location": "Dunkerque, Lille, Calais",
+    "age": "21 ans",
+    "drivingLicense": "Permis B",
+    "degree": "Dîplomé d'un BTS Cybersécurité, Informatique et Réseaux, Électronique"
+  },
+  "experience": {
+    "title": "Expériences professionnelles",
+    "jobs": {
+      "support": {
+        "period": "Juil. 2024 - Août 2024",
+        "place": "Communauté Urbaine Dunkerque",
+        "role": "Emploi saisonnier - Service support informatique",
+        "description": "Assistance utilisateurs et résolution d’incidents techniques."
+      },
+      "nas": {
+        "period": "Depuis jan. 2024",
+        "place": "Armbouts-Cappel",
+        "role": "Projet personnel",
+        "description": "Mise en place et administration d’un serveur NAS avec drive personnel, serveur Plex, reverse proxy, load balancer, honeypot et gestion d’un nom de domaine."
+      },
+      "admin": {
+        "period": "Mai 2024 - Juin 2024",
+        "place": "Communauté Urbaine Dunkerque",
+        "role": "Administrateur systèmes et réseaux (stages)",
+        "description": "Mise en œuvre et gestion de Microsoft Azure, Intune et Active Directory."
+      },
+      "maintenance": {
+        "period": "Nov. 2019 - Déc. 2019",
+        "place": "Point Micro Dunkerque",
+        "role": "Maintenance informatique",
+        "description": "Accompagnement des clients, configuration et mise en service de postes, diagnostic, maintenance logicielle et assemblage d’ordinateurs."
+      }
+    }
+  },
+  "education": {
+    "title": "Diplômes et Formations",
+    "bts": {
+      "period": "Sept. 2023 - Juin 2025",
+      "school": "EPID Dunkerque",
+      "diploma": "BTS Cybersécurité, Informatique et Réseaux - option Informatique et Réseaux"
+    },
+    "bac": {
+      "period": "Sept. 2019 - Juin 2022",
+      "school": "EPID Dunkerque",
+      "diploma": "Baccalauréat Technologique STI2D, spécialité Systèmes d’Information et Numérique"
+    }
+  },
+  "skills": {
+    "title": "Compétences",
+    "development": "Python, Java, C/C++/C#, SQL, HTML, CSS, PHP, JavaScript, Bash, PowerShell",
+    "systems": "Docker, Windows Server, Microsoft Azure, Active Directory, Intune",
+    "security": "Cybersécurité, honeypot, reverse proxy, load balancing",
+    "virtualization": "NAS, gestion de serveurs, outils collaboratifs",
+    "maintenance": "Diagnostic, support utilisateurs, dépannage hardware/software, configuration postes"
+  },
+  "extras": {
+    "title": "Activités extra-professionnelles",
+    "subtitle": "Réalisation de sous-titres, encodage et optimisation vidéo",
+    "description": "Expérience en timecoding, adaptation de contenus vidéo, optimisation de fichiers (x265, AV1). Développement de la créativité, de la rigueur et de la maîtrise technique."
+  },
+  "strengths": {
+    "title": "Atouts",
+    "items": [
+      "Capacité à résoudre les problèmes efficacement",
+      "Analyse rapide des situations complexes",
+      "Adaptabilité en systèmes et réseaux"
+    ]
+  },
+  "personality": {
+    "title": "Personnalité",
+    "items": ["Sociable", "Consciencieux", "Persévérant", "Dynamique"]
+  },
+  "interests": {
+    "title": "Centres d'intérêt",
+    "items": [
+      "Culture japonaise et apprentissage de la langue",
+      "Sous-titrage de contenus vidéo",
+      "Projets audiovisuels personnels"
+    ]
   }
 }
