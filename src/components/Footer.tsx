@@ -1,10 +1,11 @@
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { getCurrentDate } from '@/utils/helpers';
 
 export default function Footer() {
   return (
     <footer className="bg-[#f3f3f3] text-[#1d1d1d] py-10 text-center w-full">
       <p className="text-lg md:text-xl">
-        © 2025 Maxime Ryckebusch. Tous droits réservés.
+        © {getCurrentDate()} Maxime Ryckebusch. Tous droits réservés.
       </p>
       <div className="flex justify-center gap-5 mt-5">
         <a
@@ -13,7 +14,10 @@ export default function Footer() {
         >
           <FaGithub className="text-[#E63946] w-10 h-10 cursor-pointer hover:text-[#F07178]" />
         </a>
-        <a href="#" className="text-[#E63946] hover:text-[#F07178]">
+        <a
+          href="https://www.linkedin.com/in/maxime-ryckebusch-16554b342/"
+          className="text-[#E63946] hover:text-[#F07178]"
+        >
           <FaLinkedin className="text-[#E63946] w-10 h-10 hover:text-[#F07178]"></FaLinkedin>
         </a>
       </div>

@@ -17,7 +17,7 @@
     "phone": "07 77 92 01 06",
     "email": "maxime.ryckebusch1@gmail.com",
     "location": "Dunkerque, Lille, Calais",
-    "age": "21 ans",
+    "age": " ans",
     "drivingLicense": "Permis B",
     "degree": "Dîplomé d'un BTS Cybersécurité, Informatique et Réseaux, Électronique"
   },
@@ -65,11 +65,49 @@
   },
   "skills": {
     "title": "Compétences",
-    "development": "Python, Java, C/C++/C#, SQL, HTML, CSS, PHP, JavaScript, Bash, PowerShell",
-    "systems": "Docker, Windows Server, Microsoft Azure, Active Directory, Intune",
-    "security": "Cybersécurité, honeypot, reverse proxy, load balancing",
-    "virtualization": "NAS, gestion de serveurs, outils collaboratifs",
-    "maintenance": "Diagnostic, support utilisateurs, dépannage hardware/software, configuration postes"
+    "development": {
+      "title": "Développement",
+      "description": "Python, Java, C/C++/C#, SQL, HTML, CSS, PHP, JavaScript / TypeScript, Vue.js, Bash, PowerShell"
+    },
+    "systems": {
+      "title": "Systèmes",
+      "description": "Docker, Windows Server, Microsoft Azure, Active Directory, Intune"
+    },
+    "security": {
+      "title": "Sécurité",
+      "description": "Cybersécurité, honeypot, reverse proxy, load balancing"
+    },
+    "virtualization": {
+      "title": "Virtualisation",
+      "description": "NAS, gestion de serveurs, outils collaboratifs"
+    },
+    "maintenance": {
+      "title": "Maintenance",
+      "description": "Diagnostic, support utilisateurs, dépannage hardware/software, configuration postes"
+    }
+  },
+  "interest": {
+    "title": "Centres d’intérêt",
+    "informatique": {
+      "title": "Informatique",
+      "description": "Hardware, Software, Open-source, GNU / Linux"
+    },
+    "sous_titrage": {
+      "title": "Sous-titrage / vidéo",
+      "description": "Time, Edit, Scripting (Python, Lua), Encodage (x265, AV1)"
+    },
+    "jeux_video": {
+      "title": "Jeux vidéo",
+      "description": "Soulslike, FPS, TPS, RPG, Plateformer, Metroidvania, Indiesgames"
+    },
+    "jap_animation": {
+      "title": "Jap-Animation",
+      "description": "Animation, Manga"
+    },
+    "musique": {
+      "title": "Musique",
+      "description": "J-Pop, Rock, Metal, Classique"
+    }
   },
   "extras": {
     "title": "Activités extra-professionnelles",
