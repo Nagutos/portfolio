@@ -31,25 +31,36 @@ export default function Hero({
       <div className="flex flex-wrap items-center gap-8 max-w-4xl text-center md:text-left">
         {/* Adresse */}
         <p className="text-xl md:text-2xl flex items-center gap-2 group relative">
-          <FaMapMarkerAlt className="text-white w-5 h-5 cursor-pointer" />
-          {/* Tooltip */}
-          <span className="absolute left-6 bottom-full mb-2 hidden group-hover:inline-block bg-[#FFFFFF] text-black text-sm px-2 py-1 rounded shadow-lg whitespace-nowrap z-10">
+          <FaMapMarkerAlt className="text-white w-10 h-10 cursor-pointer" />
+          <span
+            className="absolute left-1/2 bottom-full mb-2 hidden group-hover:inline-block 
+                 bg-[#FFFFFF] text-black text-sm px-2 py-1 rounded shadow-lg 
+                 whitespace-nowrap z-10 transform -translate-x-1/2"
+          >
             {address}
           </span>
         </p>
 
         {/* Permis */}
         <p className="text-xl md:text-2xl flex items-center gap-2 group relative">
-          <FaCar className="text-white w-5 h-5 cursor-pointer" />
-          <span className="absolute left-6 bottom-full mb-2 hidden group-hover:inline-block bg-[#FFFFFF] text-black text-sm px-2 py-1 rounded shadow-lg whitespace-nowrap z-10">
+          <FaCar className="text-white w-10 h-10 cursor-pointer" />
+          <span
+            className="absolute left-1/2 bottom-full mb-2 hidden group-hover:inline-block 
+                 bg-[#FFFFFF] text-black text-sm px-2 py-1 rounded shadow-lg 
+                 whitespace-nowrap z-10 transform -translate-x-1/2"
+          >
             {drivingLicense}
           </span>
         </p>
 
         {/* Diplôme */}
         <p className="text-xl md:text-2xl flex items-center gap-2 group relative">
-          <BsFillMortarboardFill className="text-white w-5 h-5 cursor-pointer" />
-          <span className="absolute left-6 bottom-full mb-2 hidden group-hover:inline-block bg-[#FFFFFF] text-black text-sm px-2 py-1 rounded shadow-lg whitespace-nowrap z-10">
+          <BsFillMortarboardFill className="text-white w-10 h-10 cursor-pointer" />
+          <span
+            className="absolute left-1/2 bottom-full mb-2 hidden group-hover:inline-block 
+                 bg-[#FFFFFF] text-black text-sm px-2 py-1 rounded shadow-lg 
+                 whitespace-nowrap z-10 transform -translate-x-1/2"
+          >
             {degree}
           </span>
         </p>
