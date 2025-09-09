@@ -1,6 +1,99 @@
 {
-  "home": {
-    "title": "Welcome to my portfolio",
-    "description": "This is the English version."
+  "navbar": {
+    "home": "Home",
+    "parcours": "Career",
+    "skills": "Skills",
+    "extra": "Extras",
+    "contact": "Contact"
+  },
+  "profile": {
+    "name": "Maxime Ryckebusch",
+    "title": "Systems and Network Administrator",
+    "subtitle": "Sociable and dynamic IT technician, specialized in systems and networks with a solid background in cybersecurity.",
+    "description": "Conscientious and persistent, I have hands-on experience in customer support, server configuration, and IT tools deployment. Motivated by problem-solving and infrastructure optimization, I quickly adapt to technical environments and user needs."
+  },
+  "contact": {
+    "address": "Armbouts-Cappel (59380), France",
+    "phone": "+33 7 77 92 01 06",
+    "email": "maxime.ryckebusch1@gmail.com",
+    "location": "Dunkirk, Lille, Calais",
+    "age": "21 years old",
+    "drivingLicense": "Driving license B",
+    "degree": "Graduated with a BTS in Cybersecurity, IT and Networks, Electronics"
+  },
+  "experience": {
+    "title": "Professional Experience",
+    "jobs": {
+      "support": {
+        "period": "Jul. 2024 - Aug. 2024",
+        "place": "Urban Community of Dunkirk",
+        "role": "Seasonal job - IT support service",
+        "description": "User assistance and resolution of technical issues."
+      },
+      "nas": {
+        "period": "Since Jan. 2024",
+        "place": "Armbouts-Cappel",
+        "role": "Personal project",
+        "description": "Setup and administration of a NAS server with personal drive, Plex server, reverse proxy, load balancer, honeypot, and domain name management."
+      },
+      "admin": {
+        "period": "May 2024 - Jun. 2024",
+        "place": "Urban Community of Dunkirk",
+        "role": "Systems and Network Administrator (internship)",
+        "description": "Implementation and management of Microsoft Azure, Intune, and Active Directory."
+      },
+      "maintenance": {
+        "period": "Nov. 2019 - Dec. 2019",
+        "place": "Point Micro Dunkirk",
+        "role": "IT Maintenance",
+        "description": "Customer support, workstation configuration and setup, diagnostics, software maintenance, and computer assembly."
+      }
+    }
+  },
+  "education": {
+    "title": "Education and Training",
+    "bts": {
+      "period": "Sept. 2023 - Jun. 2025",
+      "school": "EPID Dunkirk",
+      "diploma": "BTS Cybersecurity, IT and Networks - IT and Networks option"
+    },
+    "bac": {
+      "period": "Sept. 2019 - Jun. 2022",
+      "school": "EPID Dunkirk",
+      "diploma": "Technological Baccalaureate STI2D, specialization in Information Systems and Digital Technology"
+    }
+  },
+  "skills": {
+    "title": "Skills",
+    "development": "Python, Java, C/C++/C#, SQL, HTML, CSS, PHP, JavaScript, Bash, PowerShell",
+    "systems": "Docker, Windows Server, Microsoft Azure, Active Directory, Intune",
+    "security": "Cybersecurity, honeypot, reverse proxy, load balancing",
+    "virtualization": "NAS, server management, collaborative tools",
+    "maintenance": "Diagnostics, user support, hardware/software troubleshooting, workstation configuration"
+  },
+  "extras": {
+    "title": "Extra-professional activities",
+    "subtitle": "Subtitle creation, video encoding and optimization",
+    "description": "Experience in timecoding, video content adaptation, and file optimization (x265, AV1). Development of creativity, rigor, and technical proficiency."
+  },
+  "strengths": {
+    "title": "Strengths",
+    "items": [
+      "Ability to solve problems effectively",
+      "Quick analysis of complex situations",
+      "Adaptability in systems and networks"
+    ]
+  },
+  "personality": {
+    "title": "Personality",
+    "items": ["Sociable", "Conscientious", "Persistent", "Dynamic"]
+  },
+  "interests": {
+    "title": "Interests",
+    "items": [
+      "Japanese culture and language learning",
+      "Video subtitling",
+      "Personal audiovisual projects"
+    ]
   }
 }
