@@ -94,7 +94,7 @@
     },
     "sous_titrage": {
       "title": "Sous-titrage / vidéo",
-      "description": "Time, Edit, Scripting (Python, Lua), Encodage (x265, AV1)"
+      "description": "Time, Edit, Karaoke, Scripting (Python, Lua), Encodage (x265, AV1), FFMPEG"
     },
     "jeux_video": {
       "title": "Jeux vidéo",
