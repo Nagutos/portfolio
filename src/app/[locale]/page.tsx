@@ -1,4 +1,6 @@
-'use client';
+export function generateStaticParams() {
+  return [{ locale: 'fr' }, { locale: 'en' }];
+}
 
 import { useTranslations } from 'next-intl';
 import { getMyActualAge } from '@/utils/helpers';
