@@ -25,20 +25,18 @@ export default async function RootLayout({ children, params }: Props) {
   }
 
   return (
-    <html lang={locale}>
-      <body className="bg-neutral-light text-white flex justify-center items-center min-h-screen">
-        <Navbar
-          home={messages.navbar.home}
-          parcours={messages.navbar.parcours}
-          skills={messages.navbar.skills}
-          extra={messages.navbar.extra}
-          contact={messages.navbar.contact}
-          locale={locale}
-        />
-        <NextIntlClientProvider locale={locale} messages={messages}>
-          <div className="w-full max-w p-4">{children}</div>
-        </NextIntlClientProvider>
-      </body>
-    </html>
+    <>
+      <Navbar
+        home={messages.navbar.home}
+        parcours={messages.navbar.parcours}
+        skills={messages.navbar.skills}
+        extra={messages.navbar.extra}
+        contact={messages.navbar.contact}
+        locale={locale}
+      />
+      <NextIntlClientProvider locale={locale} messages={messages}>
+        <div className="w-full max-w p-4">{children}</div>
+      </NextIntlClientProvider>
+    </>
   );
 }
