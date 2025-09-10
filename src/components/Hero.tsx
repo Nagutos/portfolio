@@ -23,51 +23,48 @@ export default function Hero({
   return (
     <header
       id="hero"
-      className="h-155 flex flex-col justify-center items-center bg-[#E63946] text-white text-center px-6"
+      className="min-h-screen flex flex-col justify-center items-center bg-[#E63946] text-white text-center px-6"
     >
-      <h1 className="text-5xl font-extrabold">{name}</h1>
-      <h2 className="text-2xl mt-1">{title}</h2>
-      <br />
-      <div className="flex flex-wrap items-center gap-8 max-w-4xl text-center md:text-left">
+      <h1 className="text-4xl sm:text-5xl font-extrabold">{name}</h1>
+      <h2 className="text-xl sm:text-2xl mt-1">{title}</h2>
+
+      <div className="flex flex-wrap items-center justify-center gap-6 max-w-4xl mt-6">
         {/* Adresse */}
-        <p className="text-xl md:text-2xl flex items-center gap-2 group relative">
-          <FaMapMarkerAlt className="text-white w-10 h-10 cursor-pointer" />
-          <span
-            className="absolute left-1/2 bottom-full mb-2 hidden group-hover:inline-block 
-                 bg-[#FFFFFF] text-black text-sm px-2 py-1 rounded shadow-lg 
-                 whitespace-nowrap z-10 transform -translate-x-1/2"
-          >
+        <div className="text-lg sm:text-2xl flex flex-col sm:flex-row items-center gap-2 group relative text-center">
+          <FaMapMarkerAlt className="text-white w-8 h-8 sm:w-10 sm:h-10" />
+          {/* Texte visible sur mobile */}
+          <span className="block sm:hidden">{address}</span>
+          {/* Tooltip desktop */}
+          <span className="hidden sm:inline-block absolute left-1/2 bottom-full mb-2 bg-[#FFFFFF] text-black text-sm px-2 py-1 rounded shadow-lg whitespace-nowrap z-10 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition">
             {address}
           </span>
-        </p>
+        </div>
 
         {/* Permis */}
-        <p className="text-xl md:text-2xl flex items-center gap-2 group relative">
-          <FaCar className="text-white w-10 h-10 cursor-pointer" />
-          <span
-            className="absolute left-1/2 bottom-full mb-2 hidden group-hover:inline-block 
-                 bg-[#FFFFFF] text-black text-sm px-2 py-1 rounded shadow-lg 
-                 whitespace-nowrap z-10 transform -translate-x-1/2"
-          >
+        <div className="text-lg sm:text-2xl flex flex-col sm:flex-row items-center gap-2 group relative text-center">
+          <FaCar className="text-white w-8 h-8 sm:w-10 sm:h-10" />
+          <span className="block sm:hidden">{drivingLicense}</span>
+          <span className="hidden sm:inline-block absolute left-1/2 bottom-full mb-2 bg-[#FFFFFF] text-black text-sm px-2 py-1 rounded shadow-lg whitespace-nowrap z-10 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition">
             {drivingLicense}
           </span>
-        </p>
+        </div>
 
         {/* Diplôme */}
-        <p className="text-xl md:text-2xl flex items-center gap-2 group relative">
-          <BsFillMortarboardFill className="text-white w-10 h-10 cursor-pointer" />
-          <span
-            className="absolute left-1/2 bottom-full mb-2 hidden group-hover:inline-block 
-                 bg-[#FFFFFF] text-black text-sm px-2 py-1 rounded shadow-lg 
-                 whitespace-nowrap z-10 transform -translate-x-1/2"
-          >
+        <div className="text-lg sm:text-2xl flex flex-col sm:flex-row items-center gap-2 group relative text-center">
+          <BsFillMortarboardFill className="text-white w-8 h-8 sm:w-10 sm:h-10" />
+          <span className="block sm:hidden">{degree}</span>
+          <span className="hidden sm:inline-block absolute left-1/2 bottom-full mb-2 bg-[#FFFFFF] text-black text-sm px-2 py-1 rounded shadow-lg whitespace-nowrap z-10 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition">
             {degree}
           </span>
-        </p>
+        </div>
       </div>
-      <br />
-      <p className="mt-2 max-w-4xl mx-auto text-left text-xl">{subtitle}</p>
-      <p className="mt-4 max-w-4xl mx-auto text-left text-xl">{description}</p>
+
+      <p className="mt-6 max-w-4xl mx-auto text-left text-lg sm:text-xl">
+        {subtitle}
+      </p>
+      <p className="mt-4 max-w-4xl mx-auto text-left text-lg sm:text-xl">
+        {description}
+      </p>
     </header>
   );
 }
