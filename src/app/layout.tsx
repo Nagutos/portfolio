@@ -1,18 +1,9 @@
+// src/app/layout.tsx
 import { ReactNode } from 'react';
 
-type Props = {
-  children: ReactNode;
-  params: Promise<{ locale: string }>;
-};
-
-export default async function RootLayout({ children, params }: Props) {
-  const { locale } = await params;
-
-  if (!['fr', 'en'].includes(locale)) {
-  }
-
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang={locale}>
+    <html lang="fr">
       <body className="bg-neutral-light text-white flex justify-center items-center min-h-screen">
         {children}
       </body>
