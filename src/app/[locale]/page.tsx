@@ -90,7 +90,7 @@ export default function HomePage() {
         </Section>
 
         <section
-          id="skills-interests"
+          id="skills"
           className="max-w-6xl mx-auto px-6 py-20 bg-[#f3f3f3] grid grid-cols-1 md:grid-cols-2 gap-12 items-start"
         >
           {/* Bloc Compétences */}
