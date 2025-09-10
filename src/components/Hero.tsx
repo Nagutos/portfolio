@@ -23,7 +23,7 @@ export default function Hero({
   return (
     <header
       id="hero"
-      className="h-150 flex flex-col justify-center items-center bg-[#E63946] text-white text-center px-6"
+      className="h-155 flex flex-col justify-center items-center bg-[#E63946] text-white text-center px-6"
     >
       <h1 className="text-5xl font-extrabold">{name}</h1>
       <h2 className="text-2xl mt-1">{title}</h2>
@@ -66,8 +66,8 @@ export default function Hero({
         </p>
       </div>
       <br />
-      <p className="mt-2 max-w-2xl mx-auto text-left text-xl">{subtitle}</p>
-      <p className="mt-4 max-w-2xl mx-auto text-left text-xl">{description}</p>
+      <p className="mt-2 max-w-4xl mx-auto text-left text-xl">{subtitle}</p>
+      <p className="mt-4 max-w-4xl mx-auto text-left text-xl">{description}</p>
     </header>
   );
 }
