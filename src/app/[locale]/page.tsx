@@ -1,6 +1,4 @@
-export function generateStaticParams() {
-  return [{ locale: 'fr' }, { locale: 'en' }];
-}
+'use client';
 
 import { useTranslations } from 'next-intl';
 import { getMyActualAge } from '@/utils/helpers';
@@ -126,7 +124,7 @@ export default function HomePage() {
           {/* Bloc Centres d’intérêt */}
           <div className="flex flex-col gap-10">
             <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-center md:text-left text-[#E63946] border-b-2 border-red-500 pb-2">
-              Centres d’intérêt
+              {t('interest.title')}
             </h2>
             <div className="text-black grid grid-cols-1 gap-8">
               {[

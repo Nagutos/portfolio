@@ -5,12 +5,16 @@ import { ReactNode } from 'react';
 import { notFound } from 'next/navigation';
 import Navbar from '@/components/Navbar';
 
-type Props = {
+type LayoutProps = {
   children: ReactNode;
   params: Promise<{ locale: string }>;
 };
 
-export default async function RootLayout({ children, params }: Props) {
+export async function generateStaticParams() {
+  return [{ locale: 'fr' }, { locale: 'en' }];
+}
+
+export default async function LocaleLayout({ children, params }: LayoutProps) {
   const { locale } = await params;
 
   if (!['fr', 'en'].includes(locale)) {
