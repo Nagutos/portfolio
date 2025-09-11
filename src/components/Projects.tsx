@@ -41,11 +41,12 @@ export default function Projects({
           <div
             key={index}
             className="
-          bg-white rounded-2xl p-6 shadow-md
-          transition-transform duration-300 transform-gpu
-          hover:scale-110 hover:z-50
-          flex flex-col overflow-visible
-        "
+              bg-white rounded-2xl p-6 shadow-md
+              transition-transform duration-300 transform-gpu
+              w-80 sm:w-144 md:w-172
+              hover:scale-[1.03]
+              flex flex-col overflow-visible
+            "
             style={{ transformOrigin: 'center' }}
           >
             <div className="relative w-full aspect-[3/4] sm:aspect-[4/5] md:aspect-[16/9] rounded-xl overflow-hidden mb-4">
