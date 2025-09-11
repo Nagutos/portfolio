@@ -9,7 +9,7 @@
   },
   "profile": {
     "name": "Maxime Ryckebusch",
-    "title": "Systems and Network Administrator",
+    "title": "DevOps Alternating Student",
     "subtitle": "Sociable and dynamic IT technician, specialized in systems and networks with solid training in cybersecurity.",
     "Paragraph1": "My name is Maxime and I am 21 years old. Passionate about IT, I have explored various fields by learning and practicing on my own in my spare time. Although my initial interest was in hardware and electronics, I gradually moved towards computer programming. My curiosity and attention to detail allow me to learn every day and constantly broaden my knowledge.",
     "Paragraph2": "Today I am able to develop in Java, C++, C#, Python, HTML, CSS, JavaScript/TypeScript, and to carry out web development with React and Vue.js. In addition, I manage and maintain a self-hosted infrastructure, mainly composed of Docker containers and a NAS server, which allows me to host different services, isolate them and experiment with various technologies.",
@@ -151,12 +151,7 @@
   },
   "personality": {
     "title": "Personality",
-    "items": [
-      "Sociable",
-      "Conscientious",
-      "Persevering",
-      "Dynamic"
-    ]
+    "items": ["Sociable", "Conscientious", "Persevering", "Dynamic"]
   },
   "interests": {
     "title": "Interests",
