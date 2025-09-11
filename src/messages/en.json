@@ -1,25 +1,31 @@
 {
   "navbar": {
     "home": "Home",
-    "parcours": "Experience",
+    "parcours": "Background",
     "skills": "Skills",
+    "projects": "Projects",
     "extra": "Extras",
     "contact": "Contact"
   },
   "profile": {
     "name": "Maxime Ryckebusch",
-    "title": "Systems and Networks Administrator",
-    "subtitle": "Sociable and dynamic IT technician, specialized in systems and networks with a solid background in cybersecurity.",
-    "description": "Conscientious and persevering, I have hands-on experience in customer support, server configuration, and IT tool deployment. Motivated by problem-solving and infrastructure optimization, I quickly adapt to technical environments and user needs."
+    "title": "Systems and Network Administrator",
+    "subtitle": "Sociable and dynamic IT technician, specialized in systems and networks with solid training in cybersecurity.",
+    "Paragraph1": "My name is Maxime and I am 21 years old. Passionate about IT, I have explored various fields by learning and practicing on my own in my spare time. Although my initial interest was in hardware and electronics, I gradually moved towards computer programming. My curiosity and attention to detail allow me to learn every day and constantly broaden my knowledge.",
+    "Paragraph2": "Today I am able to develop in Java, C++, C#, Python, HTML, CSS, JavaScript/TypeScript, and to carry out web development with React and Vue.js. In addition, I manage and maintain a self-hosted infrastructure, mainly composed of Docker containers and a NAS server, which allows me to host different services, isolate them and experiment with various technologies.",
+    "Paragraph3": "For several years, due to my interest in animation, particularly Japanese animation, I have been interested in how audiovisual content is produced and distributed. I first learned the art of subtitling (translation, timing, typesetting) with Aegisub, in order to best integrate French into Japanese works. Later, I became interested in encoding, then in video filtering with VapourSynth, two fields that arouse my curiosity and passion.",
+    "Paragraph4": "In this portfolio you will find my educational and professional background, the skills I possess, my interests, some of my projects, my extracurricular activities, as well as the various ways to contact me. I wish you an excellent reading!"
   },
   "contact": {
     "address": "Armbouts-Cappel (59380), France",
-    "phone": "+33 7 77 92 01 06",
+    "phone": "07 77 92 01 06",
     "email": "maxime.ryckebusch1@gmail.com",
     "location": "Dunkirk, Lille, Calais",
     "age": " years old",
-    "drivingLicense": "Driver's License B",
-    "degree": "Graduate of a BTS in Cybersecurity, IT, and Networks, Electronics"
+    "drivingLicense": "Driving license B",
+    "degree": "Graduated with a BTS in Cybersecurity, IT and Networks, Electronics",
+    "sendEmail": "Send an email",
+    "contactMe": "Contact me"
   },
   "experience": {
     "title": "Professional Experience",
@@ -27,40 +33,40 @@
       "support": {
         "period": "Jul. 2024 - Aug. 2024",
         "place": "Dunkirk Urban Community",
-        "role": "Seasonal Job - IT Support Service",
+        "role": "Seasonal job - IT support service",
         "description": "User assistance and resolution of technical incidents."
       },
       "nas": {
         "period": "Since Jan. 2024",
         "place": "Armbouts-Cappel",
-        "role": "Personal Project",
-        "description": "Setup and administration of a NAS server with personal drive, Plex server, reverse proxy, load balancer, honeypot, and domain name management."
+        "role": "Personal project",
+        "description": "Setup and administration of a NAS server with personal drive, Plex server, Reverse proxy, Load balancer, Honeypot and domain name management."
       },
       "admin": {
-        "period": "May 2024 - Jun. 2024",
+        "period": "May 2024 - June 2024",
         "place": "Dunkirk Urban Community",
-        "role": "Systems and Networks Administrator (Internship)",
-        "description": "Implementation and management of Microsoft Azure, Intune, and Active Directory."
+        "role": "Systems and Network Administrator (internship)",
+        "description": "Implementation and management of Microsoft Azure, Intune and Active Directory."
       },
       "maintenance": {
         "period": "Nov. 2019 - Dec. 2019",
         "place": "Point Micro Dunkirk",
         "role": "IT Maintenance",
-        "description": "Customer support, workstation setup and commissioning, diagnostics, software maintenance, and computer assembly."
+        "description": "Customer support, workstation configuration and commissioning, diagnostics, software maintenance and computer assembly."
       }
     }
   },
   "education": {
-    "title": "Education and Training",
+    "title": "Degrees and Training",
     "bts": {
-      "period": "Sep. 2023 - Jun. 2025",
+      "period": "Sept. 2023 - June 2025",
       "school": "EPID Dunkirk",
-      "diploma": "BTS in Cybersecurity, IT, and Networks - IT and Networks Option"
+      "diploma": "BTS Cybersecurity, IT and Networks - IT and Networks option"
     },
     "bac": {
-      "period": "Sep. 2019 - Jun. 2022",
+      "period": "Sept. 2019 - June 2022",
       "school": "EPID Dunkirk",
-      "diploma": "Technological Baccalaureate STI2D, Information Systems and Digital Specialization"
+      "diploma": "Technological Baccalaureate STI2D, Information and Digital Systems specialty"
     }
   },
   "skills": {
@@ -75,30 +81,30 @@
     },
     "security": {
       "title": "Security",
-      "description": "Cybersecurity, honeypot, reverse proxy, load balancing"
+      "description": "Cybersecurity, Honeypot, Reverse proxy, Load balancing"
     },
     "virtualization": {
       "title": "Virtualization",
-      "description": "NAS, server management, collaborative tools"
+      "description": "NAS, Server management, Collaborative tools"
     },
     "maintenance": {
       "title": "Maintenance",
-      "description": "Diagnostics, user support, hardware/software troubleshooting, workstation configuration"
+      "description": "Diagnostics, User support, Hardware/Software troubleshooting, Workstation configuration"
     }
   },
   "interest": {
     "title": "Interests",
     "informatique": {
       "title": "IT",
-      "description": "Hardware, Software, Open-source, GNU/Linux"
+      "description": "Hardware, Software, Open-source, GNU / Linux"
     },
     "sous_titrage": {
       "title": "Subtitling / Video",
       "description": "Timing, Editing, Karaoke, Scripting (Python, Lua), Encoding (x265, AV1), FFMPEG"
     },
     "jeux_video": {
-      "title": "Video Games",
-      "description": "Soulslike, FPS, TPS, RPG, Platformer, Metroidvania, Indie Games"
+      "title": "Video games",
+      "description": "Soulslike, FPS, TPS, RPG, Platformer, Metroidvania, Indie games"
     },
     "jap_animation": {
       "title": "Japanese Animation",
@@ -109,28 +115,54 @@
       "description": "J-Pop, Rock, Metal, Classical"
     }
   },
+  "projects": {
+    "heading": "My Projects",
+    "viewLinkText": "View project",
+    "items": {
+      "project1": {
+        "title": "Portfolio",
+        "description": "Project aimed at presenting my skills and achievements. (Project built with Next.js)",
+        "link": "https://github.com/Nagutos/portfolio"
+      },
+      "project2": {
+        "title": "LocaBox",
+        "description": "BTS project aimed at creating a mobile application and a code management API. (Vue.js)",
+        "link": "https://github.com/Nagutos/LocaBox-mobile-app"
+      },
+      "project3": {
+        "title": "My third project",
+        "description": "Another great project",
+        "link": "https://mon-troisieme-projet.com"
+      }
+    }
+  },
   "extras": {
     "title": "Extracurricular Activities",
-    "subtitle": "Subtitling, video encoding, and optimization",
-    "description": "Experience in timecoding, video content adaptation, and file optimization (x265, AV1). Development of creativity, rigor, and technical expertise."
+    "subtitle": "Subtitling, encoding and video optimization",
+    "description": "During my experiences in timecoding and subtitle adaptation, I learned to master professional tools such as Aegisub, Photoshop and Illustrator, which allowed me to precisely manage the synchronization, formatting and visual design of subtitles. I also acquired technical skills in optimizing video files with codecs such as x265 or AV1, in order to ensure maximum quality while reducing file size. These activities developed my creativity in visual and typographic processing, while strengthening my rigor and technical mastery, qualities essential for carrying out complex and demanding projects."
   },
   "strengths": {
     "title": "Strengths",
     "items": [
-      "Ability to solve problems efficiently",
+      "Ability to solve problems effectively",
       "Quick analysis of complex situations",
       "Adaptability in systems and networks"
     ]
   },
   "personality": {
     "title": "Personality",
-    "items": ["Sociable", "Conscientious", "Persevering", "Dynamic"]
+    "items": [
+      "Sociable",
+      "Conscientious",
+      "Persevering",
+      "Dynamic"
+    ]
   },
   "interests": {
     "title": "Interests",
     "items": [
       "Japanese culture and language learning",
-      "Video content subtitling",
+      "Subtitling of video content",
       "Personal audiovisual projects"
     ]
   }

@@ -6,53 +6,35 @@ import Hero from '@/components/Hero';
 import Section from '@/components/Section';
 import Timeline from '@/components/Timeline';
 import Footer from '@/components/Footer';
+import Projects from '@/components/Projects';
+import { experienceKeys, educationKeys, projectKeys } from '@/constants/data';
 
 export default function HomePage() {
   const t = useTranslations();
 
   // Expériences
-  const experiences = [
-    {
-      period: t('experience.jobs.support.period'),
-      place: t('experience.jobs.support.place'),
-      role: t('experience.jobs.support.role'),
-      description: t('experience.jobs.support.description'),
-    },
-    {
-      period: t('experience.jobs.nas.period'),
-      place: t('experience.jobs.nas.place'),
-      role: t('experience.jobs.nas.role'),
-      description: t('experience.jobs.nas.description'),
-    },
-    {
-      period: t('experience.jobs.admin.period'),
-      place: t('experience.jobs.admin.place'),
-      role: t('experience.jobs.admin.role'),
-      description: t('experience.jobs.admin.description'),
-    },
-    {
-      period: t('experience.jobs.maintenance.period'),
-      place: t('experience.jobs.maintenance.place'),
-      role: t('experience.jobs.maintenance.role'),
-      description: t('experience.jobs.maintenance.description'),
-    },
-  ];
+  const experiences = experienceKeys.map((key) => ({
+    period: t(`experience.jobs.${key}.period`),
+    place: t(`experience.jobs.${key}.place`),
+    role: t(`experience.jobs.${key}.role`),
+    description: t(`experience.jobs.${key}.description`),
+  }));
 
   // Formations
-  const education = [
-    {
-      period: t('education.bts.period'),
-      place: t('education.bts.school'),
-      role: t('education.bts.diploma'),
-      description: '',
-    },
-    {
-      period: t('education.bac.period'),
-      place: t('education.bac.school'),
-      role: t('education.bac.diploma'),
-      description: '',
-    },
-  ];
+  const education = educationKeys.map((key) => ({
+    period: t(`education.${key}.period`),
+    place: t(`education.${key}.school`),
+    role: t(`education.${key}.diploma`),
+    description: '',
+  }));
+
+  // Projets
+  const projects = projectKeys.map((key) => ({
+    title: t(`projects.items.${key}.title`),
+    description: t(`projects.items.${key}.description`),
+    image: `/images/${key}.png`,
+    link: t(`projects.items.${key}.link`, { defaultMessage: '' }), // fallback
+  }));
 
   return (
     <>
@@ -62,7 +44,10 @@ export default function HomePage() {
           name={t('profile.name')}
           title={t('profile.title')}
           subtitle={t('profile.subtitle')}
-          description={t('profile.description')}
+          Paragraph1={t('profile.Paragraph1')}
+          Paragraph2={t('profile.Paragraph2')}
+          Paragraph3={t('profile.Paragraph3')}
+          Paragraph4={t('profile.Paragraph4')}
           address={t('contact.address')}
           drivingLicense={t('contact.drivingLicense')}
           degree={t('contact.degree')}
@@ -150,6 +135,12 @@ export default function HomePage() {
           </div>
         </section>
 
+        <Projects
+          heading={t('projects.heading')}
+          viewLinkText={t('projects.viewLinkText')}
+          projects={projects}
+        />
+
         <section
           id="extras"
           className="max-w-5xl mx-auto px-6 py-20 bg-[#f3f3f3] flex flex-col justify-center"
@@ -172,7 +163,7 @@ export default function HomePage() {
           className="w-full px-6 py-10 bg-[#E63946] flex flex-col items-center justify-center text-[#FAFAFA]"
         >
           <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-center mb-5">
-            Contactez-moi
+            {t('contact.contactMe')}
           </h2>
           <div className="flex flex-col items-center gap-2 max-w-4xl text-center">
             <p className="text-xl md:text-2xl">{t('contact.address')}</p>
@@ -186,7 +177,7 @@ export default function HomePage() {
               href={`mailto:${t('contact.email')}`}
               className="mt-5 px-8 py-4 bg-white text-[#E63946] font-semibold rounded-full hover:bg-[#F5F5F5] transition"
             >
-              Envoyer un email
+              {t('contact.sendEmail')}
             </a>
           </div>
         </section>

@@ -34,6 +34,7 @@ export default async function LocaleLayout({ children, params }: LayoutProps) {
         home={messages.navbar.home}
         parcours={messages.navbar.parcours}
         skills={messages.navbar.skills}
+        projects={messages.navbar.projects}
         extra={messages.navbar.extra}
         contact={messages.navbar.contact}
         locale={locale}
