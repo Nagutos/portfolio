@@ -8,6 +8,7 @@ type NavProps = {
   home: string;
   parcours: string;
   skills: string;
+  projects: string;
   extra: string;
   contact: string;
   locale: string;
@@ -17,6 +18,7 @@ export default function Navbar({
   home,
   parcours,
   skills,
+  projects,
   extra,
   contact,
   locale,
@@ -25,6 +27,7 @@ export default function Navbar({
     { label: home, href: '#hero' },
     { label: parcours, href: '#career' },
     { label: skills, href: '#skills' },
+    { label: projects, href: '#projects' },
     { label: extra, href: '#extras' },
     { label: contact, href: '#contact' },
   ];
