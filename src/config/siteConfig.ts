@@ -1,8 +1,8 @@
 export const siteConfig = {
-  name: 'Ton Nom',
-  title: 'Développeur Fullstack',
-  description: 'Passionné par React, TypeScript et les applications modernes.',
-  email: 'ton.email@example.com',
-  github: 'https://github.com/tonpseudo',
-  linkedin: 'https://linkedin.com/in/tonprofil',
+  name: 'Ryckebusch Maxime',
+  title: 'DevOps',
+  description: "Passionné d'informatique.",
+  email: 'maxime.ryckebusch1@gmail.com',
+  github: 'https://github.com/Nagutos',
+  linkedin: 'https://www.linkedin.com/in/maxime-ryckebusch-16554b342/',
 };

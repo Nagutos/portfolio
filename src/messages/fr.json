@@ -3,6 +3,7 @@
     "home": "Accueil",
     "parcours": "Parcours",
     "skills": "Compétences",
+    "projects": "Projets",
     "extra": "Extras",
     "contact": "Contact"
   },
@@ -10,7 +11,10 @@
     "name": "Maxime Ryckebusch",
     "title": "Administrateur systèmes et réseaux",
     "subtitle": "Technicien informatique sociable et dynamique, spécialisé en systèmes et réseaux avec une solide formation en cybersécurité.",
-    "description": "Consciencieux et persévérant, je possède une expérience pratique dans le support client, la configuration de serveurs et le déploiement d’outils IT. Motivé par la résolution de problèmes et l’optimisation des infrastructures, je m’adapte rapidement aux environnements techniques et aux besoins des utilisateurs."
+    "Paragraph1": "Je m'appelle Maxime et j'ai 21 ans. Passionné par l'informatique, j'ai exploré divers domaines en apprenant et pratiquant en autodidacte sur mon temps libre. Bien que mon intérêt initial se portât sur le hardware et l'électronique, je me suis progressivement orienté vers la programmation informatique. Ma curiosité et mon sens du détail me permettent d'apprendre chaque jour et d'élargir constamment mes connaissances.",
+    "Paragraph2": "Je suis aujourd'hui capable de développer en Java, C++, C#, Python, HTML, CSS, JavaScript/TypeScript, et de réaliser du développement web avec React et Vue.js. De plus, je gère et maintiens une infrastructure auto-hébergée, principalement composée de conteneurs Docker et d’un serveur NAS, qui me permet d’héberger différents services, de les isoler et d’expérimenter diverses technologies.",
+    "Paragraph3": "Depuis quelques années, par intérêt pour l’animation, et plus particulièrement l’animation japonaise, je me suis intéressé à la manière dont les contenus audiovisuels sont produits et distribués. Je me suis d’abord initié à l’art du sous-titrage (traduction, timing, typesetting) avec Aegisub, afin d’intégrer au mieux le français dans les œuvres japonaises. Par la suite, je me suis intéressé à l’encodage, puis au filtrage vidéo avec VapourSynth, deux domaines qui éveillent ma curiosité et me passionnent.",
+    "Paragraph4": "Vous trouverez dans ce portfolio mon parcours scolaire et professionnel, les compétences que je possède, mes centres d'intérêt, quelques-uns de mes projets, mes activités extra-professionnelles, ainsi que les différents moyens de me contacter. Je vous souhaite une excellente lecture !"
   },
   "contact": {
     "address": "Armbouts-Cappel (59380), France",
@@ -19,7 +23,9 @@
     "location": "Dunkerque, Lille, Calais",
     "age": " ans",
     "drivingLicense": "Permis B",
-    "degree": "Dîplomé d'un BTS Cybersécurité, Informatique et Réseaux, Électronique"
+    "degree": "Diplômé d'un BTS Cybersécurité, Informatique et Réseaux, Électronique",
+    "sendEmail": "Envoyer un email",
+    "contactMe": "Contactez-moi"
   },
   "experience": {
     "title": "Expériences professionnelles",
@@ -34,7 +40,7 @@
         "period": "Depuis jan. 2024",
         "place": "Armbouts-Cappel",
         "role": "Projet personnel",
-        "description": "Mise en place et administration d’un serveur NAS avec drive personnel, serveur Plex, reverse proxy, load balancer, honeypot et gestion d’un nom de domaine."
+        "description": "Mise en place et administration d’un serveur NAS avec drive personnel, serveur Plex, Reverse proxy, Load balancer, Honeypot et gestion d’un nom de domaine."
       },
       "admin": {
         "period": "Mai 2024 - Juin 2024",
@@ -46,7 +52,7 @@
         "period": "Nov. 2019 - Déc. 2019",
         "place": "Point Micro Dunkerque",
         "role": "Maintenance informatique",
-        "description": "Accompagnement des clients, configuration et mise en service de postes, diagnostic, maintenance logicielle et assemblage d’ordinateurs."
+        "description": "Accompagnement des clients, configuration et mise en service de postes, diagnostic, maintenance logiciel et assemblage d’ordinateurs."
       }
     }
   },
@@ -75,15 +81,15 @@
     },
     "security": {
       "title": "Sécurité",
-      "description": "Cybersécurité, honeypot, reverse proxy, load balancing"
+      "description": "Cybersécurité, Honeypot, Reverse proxy, Load balancing"
     },
     "virtualization": {
       "title": "Virtualisation",
-      "description": "NAS, gestion de serveurs, outils collaboratifs"
+      "description": "NAS, Gestion de serveurs, Outils collaboratifs"
     },
     "maintenance": {
       "title": "Maintenance",
-      "description": "Diagnostic, support utilisateurs, dépannage hardware/software, configuration postes"
+      "description": "Diagnostic, Support utilisateurs, Dépannage hardware/software, Configuration postes"
     }
   },
   "interest": {
@@ -109,10 +115,31 @@
       "description": "J-Pop, Rock, Metal, Classique"
     }
   },
+  "projects": {
+    "heading": "Mes projets",
+    "viewLinkText": "Voir le projet",
+    "items": {
+      "project1": {
+        "title": "Portfolio",
+        "description": "Projet qui a pour but de présenter mes compétences et réalisations. (Projet réalisé avec Next.js)",
+        "link": "https://github.com/Nagutos/portfolio"
+      },
+      "project2": {
+        "title": "LocaBox",
+        "description": "Projet de BTS qui avait pour but de créer une application mobile et une API de gestion de code. (Vue.js)",
+        "link": "https://github.com/Nagutos/LocaBox-mobile-app"
+      },
+      "project3": {
+        "title": "Mon troisième projet",
+        "description": "Encore un super projet",
+        "link": "https://mon-troisieme-projet.com"
+      }
+    }
+  },
   "extras": {
     "title": "Activités extra-professionnelles",
     "subtitle": "Réalisation de sous-titres, encodage et optimisation vidéo",
-    "description": "Expérience en timecoding, adaptation de contenus vidéo, optimisation de fichiers (x265, AV1). Développement de la créativité, de la rigueur et de la maîtrise technique."
+    "description": "Au cours de mes expériences en timecoding et en adaptation de sous-titres, j'ai appris à maîtriser des outils professionnels tels qu’Aegisub, Photoshop et Illustrator, ce qui m’a permis de gérer avec précision la synchronisation, la mise en forme et le design visuel des sous-titres. J’ai également acquis des compétences techniques en optimisation de fichiers vidéo avec des codecs tels que x265 ou AV1, afin de garantir une qualité maximale tout en réduisant la taille des fichiers. Ces activités ont développé ma créativité dans le traitement visuel et typographique, tout en renforçant ma rigueur et ma maîtrise technique, des qualités indispensables pour mener à bien des projets complexes et exigeants."
   },
   "strengths": {
     "title": "Atouts",
