@@ -1,0 +1,8 @@
+services:
+  portfolio:
+    build: .
+    image: portfolio
+    container_name: portfolio-nagutos
+    restart: unless-stopped
+    ports:
+      - "8080:80"

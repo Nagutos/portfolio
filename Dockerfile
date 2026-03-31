@@ -3,14 +3,18 @@ WORKDIR /app
 COPY package*.json ./
 RUN npm install
 COPY . .
-RUN npm run build
+RUN npm run build 
 
-# Étape 2 : production
-FROM node:20-alpine
-WORKDIR /app
-COPY --from=builder /app/package*.json ./
-COPY --from=builder /app/.next ./.next
-COPY --from=builder /app/public ./public
-COPY --from=builder /app/node_modules ./node_modules
-EXPOSE 3000
-CMD ["npm", "run", "start"]
+FROM nginx:stable-alpine
+COPY --from=builder /app/out /usr/share/nginx/html
+
+RUN echo 'server { \
+    listen 80; \
+    location / { \
+    root /usr/share/nginx/html; \
+    try_files $uri $uri.html $uri/ /index.html; \
+    } \
+    }' > /etc/nginx/conf.d/default.conf
+
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]
