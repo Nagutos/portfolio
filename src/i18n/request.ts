@@ -1,9 +1,11 @@
 // src/i18n/request.ts
 import { getRequestConfig } from 'next-intl/server';
+import { defaultLocale, isLocale } from './config';
 
-export default getRequestConfig(async () => {
-  // Static for now, we'll change this later
-  const locale = 'fr';
+export default getRequestConfig(async ({ requestLocale }) => {
+  // Resolve the locale from the request, falling back to the default.
+  const requested = await requestLocale;
+  const locale = isLocale(requested) ? requested : defaultLocale;
 
   return {
     locale,

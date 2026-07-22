@@ -17,15 +17,19 @@
     "Paragraph4": "Vous trouverez dans ce portfolio mon parcours scolaire et professionnel, les compétences que je possède, mes centres d'intérêt, quelques-uns de mes projets, mes activités extra-professionnelles, ainsi que les différents moyens de me contacter. Je vous souhaite une excellente lecture !"
   },
   "contact": {
-    "address": "REDACTED (REDACTED), France",
-    "phone": "REDACTED",
-    "email": "redacted@example.com",
-    "location": "Dunkerque, Lille, Calais",
-    "age": " ans",
     "drivingLicense": "Permis B",
     "degree": "Diplômé d'un BTS Cybersécurité, Informatique et Réseaux, Électronique",
-    "sendEmail": "Envoyer un email",
-    "contactMe": "Contactez-moi"
+    "contactMe": "Contactez-moi",
+    "form": {
+      "intro": "Une question ou une opportunité ? Écrivez-moi via ce formulaire.",
+      "name": "Nom",
+      "email": "Email",
+      "message": "Message",
+      "send": "Envoyer",
+      "sending": "Envoi…",
+      "success": "Message envoyé, merci ! Je vous répondrai rapidement.",
+      "error": "L'envoi a échoué. Merci de réessayer plus tard."
+    }
   },
   "experience": {
     "title": "Expériences professionnelles",
@@ -38,7 +42,7 @@
       },
       "nas": {
         "period": "Depuis jan. 2024",
-        "place": "REDACTED",
+        "place": "Laboratoire personnel",
         "role": "Projet personnel",
         "description": "Mise en place et administration d’un serveur NAS avec drive personnel, serveur Plex, Reverse proxy, Load balancer, Honeypot et gestion d’un nom de domaine."
       },

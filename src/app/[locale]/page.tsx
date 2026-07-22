@@ -1,8 +1,8 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import { getMyActualAge } from '@/utils/helpers';
 import Hero from '@/components/Hero';
+import ContactForm from '@/components/ContactForm';
 import Section from '@/components/Section';
 import Timeline from '@/components/Timeline';
 import Footer from '@/components/Footer';
@@ -48,13 +48,12 @@ export default function HomePage() {
           Paragraph2={t('profile.Paragraph2')}
           Paragraph3={t('profile.Paragraph3')}
           Paragraph4={t('profile.Paragraph4')}
-          address={t('contact.address')}
           drivingLicense={t('contact.drivingLicense')}
           degree={t('contact.degree')}
         />
 
         {/* Section côte à côte */}
-        <Section id="career" title="Parcours">
+        <Section id="career" title={t('navbar.parcours')}>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             {/* Expériences */}
             <div>
@@ -165,20 +164,9 @@ export default function HomePage() {
           <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-center mb-5">
             {t('contact.contactMe')}
           </h2>
-          <div className="flex flex-col items-center gap-2 max-w-4xl text-center">
-            <p className="text-xl md:text-2xl">{t('contact.address')}</p>
-            <p className="text-xl md:text-2xl">{t('contact.phone')}</p>
-            <p className="text-xl md:text-2xl">{t('contact.email')}</p>
-            <p className="text-xl md:text-2xl">
-              {t('contact.location')} - {getMyActualAge() + t('contact.age')} -{' '}
-              {t('contact.drivingLicense')}
-            </p>
-            <a
-              href={`mailto:${t('contact.email')}`}
-              className="mt-5 px-8 py-4 bg-white text-[#E63946] font-semibold rounded-full hover:bg-[#F5F5F5] transition"
-            >
-              {t('contact.sendEmail')}
-            </a>
+          <div className="flex flex-col items-center max-w-xl w-full text-center">
+            <p className="text-xl md:text-2xl">{t('contact.form.intro')}</p>
+            <ContactForm />
           </div>
         </section>
         <Footer />
